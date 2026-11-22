@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Mercer Theme Documentation — Shopify Online Store 2.0</title>
-    <meta name="description" content="Official merchant documentation for the Mercer Shopify theme. Setup guides for presets, homepage sections, product pages, collections, cart drawer, and support policy.">
+    <meta name="description" content="Official merchant documentation for the Mercer Shopify theme. Setup guides for theme settings, homepage sections, product pages, collections, cart drawer, and support policy.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -37,7 +37,7 @@
         <aside class="sidebar" aria-label="Documentation sections">
           <p class="sidebar__title">On this page</p>
           <ul class="sidebar__list">
-            <li><a class="sidebar__link" href="#getting-started">1. Getting Started &amp; Presets</a></li>
+            <li><a class="sidebar__link" href="#getting-started">1. Getting Started</a></li>
             <li><a class="sidebar__link" href="#theme-settings">2. Theme Settings</a></li>
             <li><a class="sidebar__link" href="#header-footer">3. Header, Navigation &amp; Footer</a></li>
             <li><a class="sidebar__link" href="#homepage-sections">4. Home Page Sections</a></li>
@@ -51,16 +51,12 @@
 
         <div class="docs-content">
           <section id="getting-started" class="card">
-            <h2>1. Getting Started &amp; Presets</h2>
+            <h2>1. Getting Started</h2>
             <p>
-              Mercer is built for Shopify Online Store 2.0 with full Sections Everywhere support, app blocks, and two distinct presets:
+              Mercer is built for Shopify Online Store 2.0 with full Sections Everywhere support, app blocks, high-contrast architectural typography, and rounded Neo-Bento layouts.
             </p>
-            <ul>
-              <li><strong>Mercer:</strong> High-contrast light editorial palette (<code>#FFFFFF</code> background, <code>#08141E</code> ink, <code>#E86A17</code> accent) with rounded 22px Bento cards.</li>
-              <li><strong>Mercer Noir:</strong> Dark architectural aesthetic (<code>#0B0E11</code> background, <code>#F5F5F4</code> ink, <code>#D97706</code> accent) with tighter 12px corners.</li>
-            </ul>
             <p>
-              To switch presets, open <strong>Online Store &gt; Themes &gt; Customize</strong>, open <strong>Theme settings</strong>, and select your preferred theme style.
+              To begin customizing your storefront, open <strong>Online Store &gt; Themes &gt; Customize</strong> from your Shopify Admin. All sections, blocks, color schemes, and typography settings can be configured visually without writing code.
             </p>
             <div class="callout">
               <strong>Before editing code:</strong> Always duplicate your theme in <strong>Online Store &gt; Themes</strong> (click the <strong>...</strong> menu &gt; <strong>Duplicate</strong>) before making any custom code edits.
@@ -80,7 +76,7 @@
                 <tbody>
                   <tr>
                     <td><strong>Colors</strong></td>
-                    <td>Define up to four reusable color schemes (background, gradient, text, primary button, outline button, hairline border) plus your global <strong>Brand accent color</strong>.</td>
+                    <td>Define up to four reusable color schemes (background, gradient, text, primary button, outline button, hairline border), set your <strong>Brand accent color</strong>, toggle <strong>Show color swatches on product cards</strong>, and add optional <strong>Custom swatch colors</strong> (<code>Name: #HEX</code>).</td>
                   </tr>
                   <tr>
                     <td><strong>Typography</strong></td>
@@ -133,7 +129,7 @@
               <li><strong>Editorial hero:</strong> Supports separate <strong>Desktop image</strong> and <strong>Mobile image</strong>, optional auto-playing background video, scrim opacity slider, primary/secondary buttons, rotating 360-degree studio stamp, and scrolling marquee.</li>
               <li><strong>Brand manifesto split:</strong> High-contrast split card with <strong>Image position on desktop</strong> (Left or Right), <strong>Heading</strong>, and <strong>Highlighted sticker word</strong> (automatically wraps the matching word in a tilted sticker badge).</li>
               <li><strong>Featured collection:</strong> Displays a 3-piece asymmetric Bento showcase with category filter pills. Increasing <strong>Products to show</strong> above 3 automatically renders an aligned 4-column product grid underneath.</li>
-              <li><strong>Neo-Bento seasons grid:</strong> 4-tile asymmetric seasonal showcase (Autumn, Spring with rotating stamp, accent-colored Summer editorial tile, and Winter) linked directly to collections.</li>
+              <li><strong>Neo-Bento seasons grid:</strong> 4-tile asymmetric seasonal showcase linked directly to your featured collections.</li>
               <li><strong>Shop the look:</strong> Full-width campaign banner with split left/right sticker headlines (<strong>Left heading</strong>, <strong>Left sticker text</strong>, <strong>Right sticker text</strong>, <strong>Right heading</strong>) and up to 5 interactive <strong>Garment hotspot</strong> pins that open a slide-over outfit drawer.</li>
               <li><strong>Featured product &amp; Custom Liquid:</strong> Available on all JSON templates, with full support for <code>@app</code> blocks and custom Liquid snippets.</li>
             </ul>
@@ -146,7 +142,7 @@
             </p>
             <h3>Color swatches</h3>
             <p>
-              Mercer supports Shopify's native Category Metafield color and image swatches automatically on options named <em>Color</em>, <em>Colour</em>, <em>Fabric</em>, or <em>Shade</em>. To display text pills instead of swatches, uncheck <strong>Show color swatches</strong> inside the <strong>Variant picker</strong> block.
+              Mercer supports Shopify's native Category Metafield color and image swatches automatically on options named <em>Color</em>, <em>Colour</em>, <em>Fabric</em>, or <em>Shade</em>. For color names without Category Metafields, add optional <code>Name: #HEX</code> lines under <strong>Theme settings &gt; Colors &gt; Custom swatch colors</strong>. To display text pills instead of swatches, uncheck <strong>Show color swatches</strong> inside the <strong>Variant picker</strong> block.
             </p>
             <h3>Size guide &amp; Model fit metafields</h3>
             <ol>
@@ -157,7 +153,7 @@
             <h3>Native Shopify Commerce Features</h3>
             <ul>
               <li><strong>Related &amp; Complementary products:</strong> Install the free <strong>Shopify Search &amp; Discovery</strong> app to curate complementary pairings displayed in the <em>Complementary products</em> section and related items in <em>Related products</em>.</li>
-              <li><strong>Rich media &amp; 3D/AR:</strong> Upload MP4 videos, YouTube/Vimeo links, or 3D GLB/USDZ models directly to product media. Mobile shoppers automatically see the <em>View in your space</em> AR button.</li>
+              <li><strong>Rich media &amp; 3D/AR:</strong> Upload MP4 videos, YouTube/Vimeo links, or 3D GLB/USDZ models directly to product media. AR-capable mobile browsers automatically show the <em>View in your space</em> button.</li>
               <li><strong>Local pickup, Unit pricing &amp; Gift cards:</strong> Pickup availability, unit prices, Shop Pay Installments, dynamic checkout buttons, and gift card recipient fields work automatically when enabled in Shopify Admin.</li>
             </ul>
           </section>
@@ -175,7 +171,7 @@
           <section id="cart-drawer" class="card">
             <h2>7. Cart Drawer &amp; Animations</h2>
             <p>
-              Mercer includes an editorial slide-out cart drawer with a live free shipping progress bar, quantity controls, selling plan labels, line-level and order-level discount displays, unit prices, order notes, and a <strong>Complete the Look collection</strong> upsell list.
+              When a shopper adds an item to their bag, Mercer plays the optional Fly-to-Cart animation toward the header Bag icon and updates the live item count without interrupting browsing. Clicking the Bag icon opens the slide-out cart drawer with a live free shipping progress bar, quantity controls, selling plan labels, line-level and order-level discount displays, unit prices, order notes, and a <strong>Complete the Look collection</strong> upsell list.
             </p>
             <p>
               To configure the upsell list, select the <strong>Cart drawer</strong> section in the Theme Editor and choose a collection. Up to 3 in-stock products are displayed for one-click adding.
