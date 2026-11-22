@@ -78,10 +78,7 @@
               </div>
               <div class="field">
                 <label for="ThemeName">Theme Name *</label>
-                <select id="ThemeName" name="Theme Name" required>
-                  <option value="Mercer" selected>Mercer</option>
-                  <option value="Mercer Noir">Mercer Noir (Preset)</option>
-                </select>
+                <input id="ThemeName" name="Theme Name" type="text" value="Mercer" readonly required>
               </div>
             </div>
 
@@ -140,13 +137,11 @@
         var form = document.getElementById('MercerSupportForm');
         var subjectInput = document.getElementById('SubjectInput');
         var hiddenSubject = document.getElementById('HiddenSubject');
-        var themeSelect = document.getElementById('ThemeName');
 
         if (form && subjectInput && hiddenSubject) {
           form.addEventListener('submit', function () {
-            var theme = themeSelect ? themeSelect.value : 'Mercer';
             var raw = subjectInput.value.trim() || 'Support Request';
-            hiddenSubject.value = '[' + theme + ' Support] ' + raw;
+            hiddenSubject.value = '[Mercer Support] ' + raw;
           });
         }
       })();
