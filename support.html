@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercer Theme Support — Contact Form</title>
+    <meta name="description" content="Submit a support request for the Mercer Shopify theme. Our team responds within 2 business days.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="./" class="brand">
+          <span>MERCER</span>
+          <span class="brand__tag">Support</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./" class="nav-link">Documentation</a>
+          <a href="support.html" class="nav-link nav-link--primary">Contact Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="hero__eyebrow">Merchant Support Desk</p>
+        <h1 class="hero__title">Need Help With <span class="sticker">Mercer</span>?</h1>
+        <p class="hero__lead">
+          Submit your question or report a theme issue below. You will receive an immediate confirmation email, and our team will reply within 2 business days.
+        </p>
+      </section>
+
+      <div class="support-grid">
+        <section class="card" aria-labelledby="support-form-heading">
+          <h2 id="support-form-heading">Submit a Support Request</h2>
+
+          <div id="StatusSuccess" class="status-banner" role="status" hidden>
+            Thank you. Your support request has been received and a confirmation email has been sent to your inbox. We will reply within 2 business days.
+          </div>
+
+          <form
+            id="MercerSupportForm"
+            action="https://formsubmit.co/anmolcheema988@gmail.com"
+            method="POST"
+            enctype="multipart/form-data"
+            class="form-grid"
+          >
+            <input type="hidden" name="_subject" id="HiddenSubject" value="[Mercer Theme Support] New Support Request">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting Mercer Theme Support. We have received your request and will reply within 2 business days. Before making any code changes, we recommend duplicating your theme in Shopify Admin.">
+            <input type="hidden" name="_next" id="HiddenNext" value="https://anmolcheema836.github.io/mercer-docs/support.html?sent=1">
+            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
+
+            <div class="form-grid form-grid--two">
+              <div class="field">
+                <label for="FirstName">First Name *</label>
+                <input id="FirstName" name="First Name" type="text" autocomplete="given-name" required>
+              </div>
+              <div class="field">
+                <label for="LastName">Last Name *</label>
+                <input id="LastName" name="Last Name" type="text" autocomplete="family-name" required>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="Email">Email Address *</label>
+              <input id="Email" name="email" type="email" autocomplete="email" placeholder="you@yourstore.com" required>
+            </div>
+
+            <div class="form-grid form-grid--two">
+              <div class="field">
+                <label for="StoreUrl">Store URL *</label>
+                <input id="StoreUrl" name="Store URL" type="url" placeholder="https://www.storename.myshopify.com" required>
+                <span class="field__hint">Example: https://www.storename.myshopify.com</span>
+              </div>
+              <div class="field">
+                <label for="ThemeName">Theme Name *</label>
+                <select id="ThemeName" name="Theme Name" required>
+                  <option value="Mercer" selected>Mercer</option>
+                  <option value="Mercer Noir">Mercer Noir (Preset)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="SubjectInput">Subject *</label>
+              <input id="SubjectInput" name="Subject" type="text" placeholder="Brief summary of your question or issue" required>
+            </div>
+
+            <div class="field">
+              <label for="ProblemDescription">Description of Problem *</label>
+              <textarea id="ProblemDescription" name="Description of Problem" rows="6" placeholder="Describe what happened, which page or section is affected, and steps to reproduce the issue." required></textarea>
+            </div>
+
+            <div class="field">
+              <label for="Attachment">Attach Screenshot or File (Optional)</label>
+              <input id="Attachment" name="attachment" type="file" accept="image/png,image/jpeg,image/webp,application/pdf,.zip">
+              <span class="field__hint">Accepted formats: PNG, JPG, WebP, PDF, or ZIP (max 5 MB).</span>
+            </div>
+
+            <div style="margin-top:0.4rem;">
+              <button type="submit" class="btn btn--full">Send Support Request</button>
+            </div>
+          </form>
+        </section>
+
+        <aside class="card">
+          <h3>Before You Submit</h3>
+          <ul>
+            <li>Check the <a href="./#faq">Mercer Documentation &amp; FAQ</a> for quick setup answers.</li>
+            <li>Include a screenshot if you are reporting a visual or mobile layout issue.</li>
+            <li>If your store is password protected, mention whether we need preview access to inspect the issue.</li>
+          </ul>
+          <div class="callout">
+            <strong>Response Time:</strong> Within 2 business days (Monday–Friday).<br>
+            <strong>Direct Email:</strong> <a href="mailto:anmolcheema988@gmail.com">anmolcheema988@gmail.com</a>
+          </div>
+        </aside>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span>&copy; 2026 Mercer Studio. Support for Shopify Online Store 2.0.</span>
+        <span><a href="./">Back to Documentation</a></span>
+      </div>
+    </footer>
+
+    <script>
+      (function () {
+        var params = new URLSearchParams(window.location.search);
+        if (params.get('sent') === '1') {
+          var banner = document.getElementById('StatusSuccess');
+          if (banner) banner.hidden = false;
+        }
+
+        var form = document.getElementById('MercerSupportForm');
+        var subjectInput = document.getElementById('SubjectInput');
+        var hiddenSubject = document.getElementById('HiddenSubject');
+        var themeSelect = document.getElementById('ThemeName');
+
+        if (form && subjectInput && hiddenSubject) {
+          form.addEventListener('submit', function () {
+            var theme = themeSelect ? themeSelect.value : 'Mercer';
+            var raw = subjectInput.value.trim() || 'Support Request';
+            hiddenSubject.value = '[' + theme + ' Support] ' + raw;
+          });
+        }
+      })();
+    </script>
+  </body>
+</html>

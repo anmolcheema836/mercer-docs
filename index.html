@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mercer Theme Documentation — Shopify Online Store 2.0</title>
+    <meta name="description" content="Official merchant documentation for the Mercer Shopify theme. Setup guides for presets, homepage sections, product pages, collections, cart drawer, and support policy.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container site-header__inner">
+        <a href="./" class="brand">
+          <span>MERCER</span>
+          <span class="brand__tag">Docs v1.0</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="./" class="nav-link">Documentation</a>
+          <a href="support.html" class="nav-link nav-link--primary">Contact Support</a>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="hero">
+        <p class="hero__eyebrow">Shopify Online Store 2.0 Theme Guide</p>
+        <h1 class="hero__title">Mercer Theme <span class="sticker">Documentation</span></h1>
+        <p class="hero__lead">
+          Complete setup instructions for configuring Mercer's Neo-Bento layouts, typography, color schemes, product pages, faceted search filtering, and cart drawer.
+        </p>
+      </section>
+
+      <div class="docs-layout">
+        <aside class="sidebar" aria-label="Documentation sections">
+          <p class="sidebar__title">On this page</p>
+          <ul class="sidebar__list">
+            <li><a class="sidebar__link" href="#getting-started">1. Getting Started &amp; Presets</a></li>
+            <li><a class="sidebar__link" href="#theme-settings">2. Theme Settings</a></li>
+            <li><a class="sidebar__link" href="#header-footer">3. Header, Navigation &amp; Footer</a></li>
+            <li><a class="sidebar__link" href="#homepage-sections">4. Home Page Sections</a></li>
+            <li><a class="sidebar__link" href="#product-page">5. Product Page &amp; Metafields</a></li>
+            <li><a class="sidebar__link" href="#collections-search">6. Collections &amp; Search Filtering</a></li>
+            <li><a class="sidebar__link" href="#cart-drawer">7. Cart Drawer &amp; Animations</a></li>
+            <li><a class="sidebar__link" href="#faq">8. Frequently Asked Questions</a></li>
+            <li><a class="sidebar__link" href="#support-policy">9. Support Policy</a></li>
+          </ul>
+        </aside>
+
+        <div class="docs-content">
+          <section id="getting-started" class="card">
+            <h2>1. Getting Started &amp; Presets</h2>
+            <p>
+              Mercer is built for Shopify Online Store 2.0 with full Sections Everywhere support, app blocks, and two distinct presets:
+            </p>
+            <ul>
+              <li><strong>Mercer:</strong> High-contrast light editorial palette (<code>#FFFFFF</code> background, <code>#08141E</code> ink, <code>#E86A17</code> accent) with rounded 22px Bento cards.</li>
+              <li><strong>Mercer Noir:</strong> Dark architectural aesthetic (<code>#0B0E11</code> background, <code>#F5F5F4</code> ink, <code>#D97706</code> accent) with tighter 12px corners.</li>
+            </ul>
+            <p>
+              To switch presets, open <strong>Online Store &gt; Themes &gt; Customize</strong>, open <strong>Theme settings</strong>, and select your preferred theme style.
+            </p>
+            <div class="callout">
+              <strong>Before editing code:</strong> Always duplicate your theme in <strong>Online Store &gt; Themes</strong> (click the <strong>...</strong> menu &gt; <strong>Duplicate</strong>) before making any custom code edits.
+            </div>
+          </section>
+
+          <section id="theme-settings" class="card">
+            <h2>2. Theme Settings</h2>
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Setting Group</th>
+                    <th>What It Controls</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><strong>Colors</strong></td>
+                    <td>Define up to four reusable color schemes (background, gradient, text, primary button, outline button, hairline border) plus your global <strong>Brand accent color</strong>.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Typography</strong></td>
+                    <td>Select your <strong>Heading font</strong> (default: Anton), <strong>Heading scale</strong> (85%–130%), <strong>Uppercase display headings</strong> toggle, and <strong>Body font</strong> (default: Inter).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Layout and shape</strong></td>
+                    <td>Adjust <strong>Max page width</strong> (1200px–1680px), <strong>Grid gap</strong> (8px–32px), and <strong>Bento card corner radius</strong> (0px–32px).</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Animations and badges</strong></td>
+                    <td>Toggle the <strong>Fly-to-Cart animation</strong>, adjust its duration (800ms–2400ms), and enable or hide <strong>rotating studio stamp badges</strong> globally.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Cart drawer</strong></td>
+                    <td>Enable the <strong>free shipping progress bar</strong>, set the threshold in your store currency (e.g., <code>250</code> for $250), and toggle the <strong>order note</strong> field.</td>
+                  </tr>
+                  <tr>
+                    <td><strong>Social media &amp; Favicon</strong></td>
+                    <td>Add links for Instagram, TikTok, YouTube, and X (displayed automatically in the footer) and upload your 32 x 32px .png favicon.</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section id="header-footer" class="card">
+            <h2>3. Header, Navigation &amp; Footer</h2>
+            <h3>Announcement bar</h3>
+            <p>
+              Add up to 6 announcements with optional links. Toggle <strong>Enable scrolling marquee</strong> to turn announcements into a continuous horizontal ticker and adjust <strong>Marquee duration (seconds)</strong> to control speed.
+            </p>
+            <h3>Header &amp; Mega Menu</h3>
+            <p>
+              Assign your <strong>Main menu</strong> (default: <code>main-menu</code>). Mercer supports up to 3-level nested menus: top-level items with sub-links automatically open a full-width editorial mega menu on desktop and collapsible accordions in the mobile drawer.
+            </p>
+            <ul>
+              <li><strong>Mega menu feature blocks:</strong> Add a <em>Mega menu feature</em> block in the Header section and enter the exact <strong>Parent menu item title</strong> (e.g., <code>Shop</code>) to attach editorial promo imagery inside that dropdown.</li>
+              <li><strong>Customer accounts:</strong> Mercer integrates Shopify's native <code>&lt;shopify-account&gt;</code> component in both desktop and mobile headers.</li>
+            </ul>
+            <h3>Footer</h3>
+            <p>
+              Configure up to 4 columns using <strong>Menu column</strong> and <strong>Brand note</strong> blocks. Enable the <strong>scrolling marquee</strong> (separate phrases with a pipe <code>|</code>), newsletter signup, Follow on Shop button, country/language selectors, store policies, and full-color payment icons.
+            </p>
+          </section>
+
+          <section id="homepage-sections" class="card">
+            <h2>4. Home Page Sections</h2>
+            <ul>
+              <li><strong>Editorial hero:</strong> Supports separate <strong>Desktop image</strong> and <strong>Mobile image</strong>, optional auto-playing background video, scrim opacity slider, primary/secondary buttons, rotating 360-degree studio stamp, and scrolling marquee.</li>
+              <li><strong>Brand manifesto split:</strong> High-contrast split card with <strong>Image position on desktop</strong> (Left or Right), <strong>Heading</strong>, and <strong>Highlighted sticker word</strong> (automatically wraps the matching word in a tilted sticker badge).</li>
+              <li><strong>Featured collection:</strong> Displays a 3-piece asymmetric Bento showcase with category filter pills. Increasing <strong>Products to show</strong> above 3 automatically renders an aligned 4-column product grid underneath.</li>
+              <li><strong>Neo-Bento seasons grid:</strong> 4-tile asymmetric seasonal showcase (Autumn, Spring with rotating stamp, accent-colored Summer editorial tile, and Winter) linked directly to collections.</li>
+              <li><strong>Shop the look:</strong> Full-width campaign banner with split left/right sticker headlines (<strong>Left heading</strong>, <strong>Left sticker text</strong>, <strong>Right sticker text</strong>, <strong>Right heading</strong>) and up to 5 interactive <strong>Garment hotspot</strong> pins that open a slide-over outfit drawer.</li>
+              <li><strong>Featured product &amp; Custom Liquid:</strong> Available on all JSON templates, with full support for <code>@app</code> blocks and custom Liquid snippets.</li>
+            </ul>
+          </section>
+
+          <section id="product-page" class="card">
+            <h2>5. Product Page &amp; Metafields</h2>
+            <p>
+              The <strong>Product information</strong> section supports drag-and-drop blocks for Brand, Title, Price, Model fit notes, Variant picker, Buy buttons, Delivery and trust signals, Description, Collapsible rows, Custom Liquid, and App blocks.
+            </p>
+            <h3>Color swatches</h3>
+            <p>
+              Mercer supports Shopify's native Category Metafield color and image swatches automatically on options named <em>Color</em>, <em>Colour</em>, <em>Fabric</em>, or <em>Shade</em>. To display text pills instead of swatches, uncheck <strong>Show color swatches</strong> inside the <strong>Variant picker</strong> block.
+            </p>
+            <h3>Size guide &amp; Model fit metafields</h3>
+            <ol>
+              <li>In Shopify Admin, go to <strong>Settings &gt; Metafields and metaobjects &gt; Products</strong>.</li>
+              <li>Create a single-line text metafield with key <code>custom.model_fit</code> to show per-product fit notes (e.g., <em>Model is 6'1" wearing size L</em>).</li>
+              <li>Create a rich text or page reference metafield with key <code>custom.size_guide</code> for product-specific sizing charts, or assign a global fallback in the section's <strong>Default size guide page</strong> setting.</li>
+            </ol>
+            <h3>Native Shopify Commerce Features</h3>
+            <ul>
+              <li><strong>Related &amp; Complementary products:</strong> Install the free <strong>Shopify Search &amp; Discovery</strong> app to curate complementary pairings displayed in the <em>Complementary products</em> section and related items in <em>Related products</em>.</li>
+              <li><strong>Rich media &amp; 3D/AR:</strong> Upload MP4 videos, YouTube/Vimeo links, or 3D GLB/USDZ models directly to product media. Mobile shoppers automatically see the <em>View in your space</em> AR button.</li>
+              <li><strong>Local pickup, Unit pricing &amp; Gift cards:</strong> Pickup availability, unit prices, Shop Pay Installments, dynamic checkout buttons, and gift card recipient fields work automatically when enabled in Shopify Admin.</li>
+            </ul>
+          </section>
+
+          <section id="collections-search" class="card">
+            <h2>6. Collections &amp; Search Filtering</h2>
+            <p>
+              Mercer uses Shopify's native Storefront Filtering on both Collection and Search pages. To configure filters (Availability, Price, Size, Color, Vendor, Product type), install and open the free <strong>Shopify Search &amp; Discovery</strong> app and select <strong>Filters</strong>.
+            </p>
+            <p>
+              On desktop collection pages, shoppers can switch between 2, 3, and 4 columns via the toolbar switcher, and their preference is remembered across page loads.
+            </p>
+          </section>
+
+          <section id="cart-drawer" class="card">
+            <h2>7. Cart Drawer &amp; Animations</h2>
+            <p>
+              Mercer includes an editorial slide-out cart drawer with a live free shipping progress bar, quantity controls, selling plan labels, line-level and order-level discount displays, unit prices, order notes, and a <strong>Complete the Look collection</strong> upsell list.
+            </p>
+            <p>
+              To configure the upsell list, select the <strong>Cart drawer</strong> section in the Theme Editor and choose a collection. Up to 3 in-stock products are displayed for one-click adding.
+            </p>
+          </section>
+
+          <section id="faq" class="card">
+            <h2>8. Frequently Asked Questions</h2>
+            <div class="faq-list">
+              <details class="faq-item" open>
+                <summary>What image aspect ratios work best with Mercer?</summary>
+                <p>For product cards and galleries, a 3:4 or 4:5 portrait ratio (at least 1200 x 1500px .jpg) delivers the sharpest look. Mercer automatically adapts to 16:9, 4:3, 3:2, and 1:1 images without stretching or cropping full product photos on product pages.</p>
+              </details>
+              <details class="faq-item">
+                <summary>How do I customize or translate the marquee phrases?</summary>
+                <p>Open the <strong>Editorial hero</strong>, <strong>Product information</strong>, or <strong>Footer</strong> section in the Theme Editor and edit the <strong>Marquee phrases</strong> field. Separate each phrase with a pipe character (<code>|</code>), or uncheck <strong>Show scrolling marquee</strong> to hide it.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Why is my Complementary products section hidden on a product page?</summary>
+                <p>The Complementary products section stays hidden until products are assigned via the Shopify Search &amp; Discovery app, preventing empty gaps on products without pairings.</p>
+              </details>
+              <details class="faq-item">
+                <summary>Can I turn off the Fly-to-Cart animation?</summary>
+                <p>Yes. Go to <strong>Theme settings &gt; Animations and badges</strong> and uncheck <strong>Enable Fly-to-Cart animation</strong>. The animation also respects visitors' <em>prefers-reduced-motion</em> system settings automatically.</p>
+              </details>
+            </div>
+          </section>
+
+          <section id="support-policy" class="card">
+            <h2>9. Support Policy</h2>
+            <p>
+              We are committed to helping you launch and run your store smoothly with Mercer. All support requests submitted through our <a href="support.html">public support form</a> receive a response within <strong>2 business days</strong> (Monday–Friday).
+            </p>
+            <h3>What is included in theme support</h3>
+            <ul>
+              <li>Answering questions about built-in theme features, sections, and settings.</li>
+              <li>Investigating and fixing verified bugs or layout issues in unmodified theme code.</li>
+              <li>Guidance on updating to newer versions of Mercer.</li>
+            </ul>
+            <h3>What is not included</h3>
+            <ul>
+              <li>Custom Liquid, CSS, or JavaScript development beyond built-in theme settings.</li>
+              <li>Installing, configuring, or troubleshooting third-party Shopify apps.</li>
+              <li>Store setup, content migration, or custom graphic design.</li>
+            </ul>
+            <p>
+              If you need custom storefront development beyond Mercer's built-in features, we recommend hiring a verified expert from the <a href="https://www.shopify.com/partners/directory" target="_blank" rel="noopener noreferrer">Shopify Partner Directory</a>.
+            </p>
+            <div style="margin-top:1.5rem;">
+              <a href="support.html" class="btn">Open Support Contact Form</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer__inner">
+        <span>&copy; 2026 Mercer Studio. Documentation for Shopify Online Store 2.0.</span>
+        <span><a href="support.html">Contact Support</a></span>
+      </div>
+    </footer>
+  </body>
+</html>
