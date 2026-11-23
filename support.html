@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Mercer Theme Support — Contact Form</title>
-    <meta name="description" content="Submit a support request for the Mercer Shopify theme. Our team responds within 2 business days.">
+    <title>Cheema Theme Support — Contact Form</title>
+    <meta name="description" content="Submit a support request for the Cheema Shopify theme. Our team responds within 2 business days.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -14,7 +14,7 @@
     <header class="site-header">
       <div class="container site-header__inner">
         <a href="./" class="brand">
-          <span>MERCER</span>
+          <span>CHEEMA</span>
           <span class="brand__tag">Support</span>
         </a>
         <nav class="site-nav" aria-label="Primary">
@@ -27,7 +27,7 @@
     <main class="container">
       <section class="hero">
         <p class="hero__eyebrow">Merchant Support Desk</p>
-        <h1 class="hero__title">Need Help With <span class="sticker">Mercer</span>?</h1>
+        <h1 class="hero__title">Need Help With <span class="sticker">Cheema</span>?</h1>
         <p class="hero__lead">
           Submit your question or report a theme issue below. You will receive an immediate confirmation email, and our team will reply within 2 business days.
         </p>
@@ -42,16 +42,16 @@
           </div>
 
           <form
-            id="MercerSupportForm"
+            id="CheemaSupportForm"
             action="https://formsubmit.co/anmolcheema988@gmail.com"
             method="POST"
             enctype="multipart/form-data"
             class="form-grid"
           >
-            <input type="hidden" name="_subject" id="HiddenSubject" value="[Mercer Theme Support] New Support Request">
+            <input type="hidden" name="_subject" id="HiddenSubject" value="[Cheema Theme Support] New Support Request">
             <input type="hidden" name="_template" value="table">
-            <input type="hidden" name="_autoresponse" value="Thank you for contacting Mercer Theme Support. We have received your request and will reply within 2 business days. Before making any code changes, we recommend duplicating your theme in Shopify Admin.">
-            <input type="hidden" name="_next" id="HiddenNext" value="https://anmolcheema836.github.io/mercer-docs/support.html?sent=1">
+            <input type="hidden" name="_autoresponse" value="Thank you for contacting Cheema Theme Support. We have received your request and will reply within 2 business days. Before making any code changes, we recommend duplicating your theme in Shopify Admin.">
+            <input type="hidden" name="_next" id="HiddenNext" value="https://anmolcheema836.github.io/cheema-docs/support.html?sent=1">
             <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
 
             <div class="form-grid form-grid--two">
@@ -78,7 +78,7 @@
               </div>
               <div class="field">
                 <label for="ThemeName">Theme Name *</label>
-                <input id="ThemeName" name="Theme Name" type="text" value="Mercer" readonly required>
+                <input id="ThemeName" name="Theme Name" type="text" value="Cheema" readonly required>
               </div>
             </div>
 
@@ -107,7 +107,7 @@
         <aside class="card">
           <h3>Before You Submit</h3>
           <ul>
-            <li>Check the <a href="./#faq">Mercer Documentation &amp; FAQ</a> for quick setup answers.</li>
+            <li>Check the <a href="./#faq">Cheema Documentation &amp; FAQ</a> for quick setup answers.</li>
             <li>Include a screenshot if you are reporting a visual or mobile layout issue.</li>
             <li>If your store is password protected, mention whether we need preview access to inspect the issue.</li>
           </ul>
@@ -121,7 +121,7 @@
 
     <footer class="site-footer">
       <div class="container site-footer__inner">
-        <span>&copy; 2026 Mercer Studio. Support for Shopify Online Store 2.0.</span>
+        <span>&copy; 2026 Cheema Studio. Support for Shopify Online Store 2.0.</span>
         <span><a href="./">Back to Documentation</a></span>
       </div>
     </footer>
@@ -134,14 +134,14 @@
           if (banner) banner.hidden = false;
         }
 
-        var form = document.getElementById('MercerSupportForm');
+        var form = document.getElementById('CheemaSupportForm');
         var subjectInput = document.getElementById('SubjectInput');
         var hiddenSubject = document.getElementById('HiddenSubject');
 
         if (form && subjectInput && hiddenSubject) {
           form.addEventListener('submit', function () {
             var raw = subjectInput.value.trim() || 'Support Request';
-            hiddenSubject.value = '[Mercer Support] ' + raw;
+            hiddenSubject.value = '[Cheema Support] ' + raw;
           });
         }
       })();
